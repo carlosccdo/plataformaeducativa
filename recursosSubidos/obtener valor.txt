@@ -1,0 +1,362 @@
+ShareBrowseToolsHelpAbout
+ Document@2x   Chain_link@2x   Arrow_down@2x   Spiral_paper@2x A A A
+Plain text   less than a minute ago     Report abuse
+    
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+Eventos en JS
+
+http://www.w3schools.com/js/js_htmldom_events.asp
+
+----------------------------------------------------------------------------------------------------------------
+
+
+Gestión de controles con JS
+
+
+SELECT
+
+HTML
+
+<select id="menu1">
+
+ <option value="valor1">Valor 1</option>
+
+ <option value="valor2">Valor 2</option>
+
+</select>
+
+Javascript:
+
+// Obtenemos el valor de un "select"
+
+var m1= document.getElementById("menu1");
+
+var valorMenu = m1.options[m1.selectedIndex].value;
+
+// Obtenemos el texto de un "select"
+
+var m2 = document.getElementById("menu1");
+
+var textoMenu = m2.options[m2.selectedIndex].text;
+
+jQuery:
+
+// Obtenemos el valor de un "select"
+
+var valorMenu= $("#menu1 option:selected").val();
+
+// Obtenemos el texto de un "select"
+
+var textoMenu = $("#menu1 option:selected").text();
+
+RADIO BUTTON
+
+HTML
+
+<form name="form1">
+
+<input type="radio" id="r1" name="radio1" value="valor1" checked="checked">Opcion 1
+
+<input type="radio" id="r2" name="radio1" value="valor2">Opcion 2
+
+</form>
+
+Javascript:
+
+// Obtener el valor de un radio button, independientemente de que este o no seleccionado:
+
+var valorR1 = document.getElementById('r1').value;
+
+// Obtener el valor de un radio button seleccionado:
+
+var valorRadioSeleccionado;
+
+if (document.getElementById('r1').checked) {
+
+ valorRadioSeleccionado = document.getElementById('r1').value;
+
+}
+
+if (document.getElementById('r2').checked) {
+
+ valorRadioSeleccionado = document.getElementById('r2').value;
+
+}
+
+// Obtener el valor del rario button seleccionado, recorriendo todo el grupo:
+
+var valorRadioSeleccionado;
+
+for (i=0; i<document.form1.length; i++){
+
+ if (document.form1.radio1[i].checked){
+
+ valorRadioSeleccionado = document.form1.radio1[i].value; 
+
+ break;
+
+ }
+
+}
+
+ 
+
+alert (valorRadioSeleccionado);
+
+jQuery:
+
+$("input[name='radio1']:checked").val();
+
+TEXT FIELD
+
+Javascript:
+
+// Obtener el valor de un campo de texto:
+
+var valorCampoTexto = document.getElementById("c1").value;
+
+jQuery:
+
+// Obtener el valor de un campo de texto:
+
+var valorCampoTexto = $('#c1').val();
+
+// Establecer el valor en un campo de texto:
+
+$('#c1').val('nuevo valor');
+
+CHECKBOX
+
+HTML
+
+<form>
+
+<input type="checkbox" name="check1" id="check1" value="valor1">Valor 1<br>
+
+<input type="checkbox" name="check2" id="check2" value="valor2">Valor 2
+
+</form>
+
+Javascript:
+
+var valorCheck1 = document.getElementById("check1").value;
+
+var valorCheck2 = document.getElementById("check2").value;
+
+jQuery:
+
+var valorCheck1 = $('#check1').val();
+
+var valorCheck2 = $('#check2').val();
+
+TEXT AREA
+
+HTML
+
+<form>
+
+<textarea id="textarea1"></textarea>
+
+</form>
+
+Javascript:
+
+var valorTextArea = document.getElementById("textarea1").value;
+
+jQuery:
+
+var valorTextArea = jQuery("textarea#textarea1").val();
+
+DIV
+
+HTML
+
+<div id="div1"></div>
+
+Javascript:
+
+document.getElementById("div1").innerHTML="Valor a incluir en el Div";
+
+jQuery:
+
+$('#div1').text('Valor a incluir en el Div'); // Trata todo como texto, incluido las etiquetas html
+
+$('#div1').html('Valor a incluir en el Div'); // Interpreta adecuadamente las etiquetas html

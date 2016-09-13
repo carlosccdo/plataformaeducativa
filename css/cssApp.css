@@ -1,0 +1,1008 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13-oct-2014, 23:18:11
+    Author     : MANA
+
+*/
+/*caracteristicas generales*/
+@import url(http://fonts.googleapis.com/css?family=Changa+One);
+html{    
+    overflow-y: scroll;  
+}
+
+html ,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-size: 62.5%;    
+    font-family: 'Changa One';
+    color: white;
+}
+
+.contPagina{
+
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../img/fondo5.jpg);
+    clear: both;
+    float: left;
+
+
+}
+.contPagina2{
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../img/fondo5.jpg);
+    background-repeat:repeat;
+    padding-bottom: 46%;
+
+}
+select{
+    width: 150px;
+    padding: 5px;
+    height: 30px;
+    text-shadow: 1px 1px 0 #4b4b4b;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+    background:-moz-linear-gradient(0% 100% 90deg,#7e7e7e, #5e5e5e);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#5e5e5e), to(#7e7e7e));
+
+}
+
+
+
+
+/*inicio cabecera*/
+
+#cabecera{
+    width: 100%;
+    clear: both;
+    float: left;
+    background-color: #562D57;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+
+
+
+
+}
+#nombreCabecera{
+    width: 45%;
+    margin-left: 5%;
+    clear: both;
+    float: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#welcome{
+
+    margin-left: 80%;
+    margin-top: 2.5%;
+    padding-top: 0.5%;
+    float: left;
+}
+#b11{
+    border-radius: 8px 8px 8px 8px;
+    padding: 1%;
+    border: none;
+    font-family: 'Changa One';
+    background-color: gray; 
+}
+/* loging*/
+
+#loginCabecera{
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 0.8%;
+    padding-top: 0.5%;
+    float: left;
+
+}
+
+#f1 #usuario,#clave{
+    padding:3px;
+    border:none;
+    border-radius:5px;
+
+}
+#f1:focus{
+    box-shadow:0 0 15px #036;
+    color: grey;
+}
+
+#f1 a {
+    color: white;
+    text-decoration: none;
+}
+#f1 a:hover {
+    color:  gray;
+}
+
+/*fin de cabecera */
+
+
+
+/*inicio de menu horizontal*/
+
+.contmenu{
+    font-size: 1.5em;
+    clear: both;
+    float: left;
+    width: 100%;
+
+
+
+}
+
+ul.menu {
+    background-color: gray;
+    opacity: .60;
+    -moz-opacity: .60;
+    filter:alpha(opacity=45);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    border-radius:  0 0 30px 30px;
+}
+ul.menu li {
+    float: left;
+    width: 20%;
+}
+ul.menu li a {
+    text-align: center;
+    color: black;
+    display: block;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-decoration: none;
+}
+ul.menu li a:hover {
+    color:  #562D57;
+
+}
+/*fin de menu horizontal */
+
+/*inicio menu vertical */
+
+
+#menuDesplegable{
+    position: fixed;
+    margin-top: 11.5%;
+}
+
+#slider {
+    height: 280px;
+}
+#slider ul:before {
+    background: rgb(86,45,87); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(86,45,87,1) 12%, rgba(86,45,87,1) 36%, rgba(86,45,87,1) 43%, rgba(86,45,87,1) 43%, rgba(86,45,87,1) 47%, rgba(86,45,87,1) 47%, rgba(86,45,87,1) 47%, rgba(86,45,87,1) 53%, rgba(86,45,87,1) 53%, rgba(86,45,87,1) 56%, rgba(86,45,87,1) 56%, rgba(86,45,87,1) 62%, rgba(125,89,140,1) 86%, rgba(125,89,140,1) 86%, rgba(85,53,86,1) 99%, rgba(85,53,86,1) 99%, rgba(85,53,86,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(12%,rgba(86,45,87,1)), color-stop(36%,rgba(86,45,87,1)), color-stop(43%,rgba(86,45,87,1)), color-stop(43%,rgba(86,45,87,1)), color-stop(47%,rgba(86,45,87,1)), color-stop(47%,rgba(86,45,87,1)), color-stop(47%,rgba(86,45,87,1)), color-stop(53%,rgba(86,45,87,1)), color-stop(53%,rgba(86,45,87,1)), color-stop(56%,rgba(86,45,87,1)), color-stop(56%,rgba(86,45,87,1)), color-stop(62%,rgba(86,45,87,1)), color-stop(86%,rgba(125,89,140,1)), color-stop(86%,rgba(125,89,140,1)), color-stop(99%,rgba(85,53,86,1)), color-stop(99%,rgba(85,53,86,1)), color-stop(100%,rgba(85,53,86,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(86,45,87,1) 12%,rgba(86,45,87,1) 36%,rgba(86,45,87,1) 43%,rgba(86,45,87,1) 43%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 53%,rgba(86,45,87,1) 53%,rgba(86,45,87,1) 56%,rgba(86,45,87,1) 56%,rgba(86,45,87,1) 62%,rgba(125,89,140,1) 86%,rgba(125,89,140,1) 86%,rgba(85,53,86,1) 99%,rgba(85,53,86,1) 99%,rgba(85,53,86,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(86,45,87,1) 12%,rgba(86,45,87,1) 36%,rgba(86,45,87,1) 43%,rgba(86,45,87,1) 43%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 53%,rgba(86,45,87,1) 53%,rgba(86,45,87,1) 56%,rgba(86,45,87,1) 56%,rgba(86,45,87,1) 62%,rgba(125,89,140,1) 86%,rgba(125,89,140,1) 86%,rgba(85,53,86,1) 99%,rgba(85,53,86,1) 99%,rgba(85,53,86,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(86,45,87,1) 12%,rgba(86,45,87,1) 36%,rgba(86,45,87,1) 43%,rgba(86,45,87,1) 43%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 53%,rgba(86,45,87,1) 53%,rgba(86,45,87,1) 56%,rgba(86,45,87,1) 56%,rgba(86,45,87,1) 62%,rgba(125,89,140,1) 86%,rgba(125,89,140,1) 86%,rgba(85,53,86,1) 99%,rgba(85,53,86,1) 99%,rgba(85,53,86,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(86,45,87,1) 12%,rgba(86,45,87,1) 36%,rgba(86,45,87,1) 43%,rgba(86,45,87,1) 43%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 47%,rgba(86,45,87,1) 53%,rgba(86,45,87,1) 53%,rgba(86,45,87,1) 56%,rgba(86,45,87,1) 56%,rgba(86,45,87,1) 62%,rgba(125,89,140,1) 86%,rgba(125,89,140,1) 86%,rgba(85,53,86,1) 99%,rgba(85,53,86,1) 99%,rgba(85,53,86,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#562d57', endColorstr='#553556',GradientType=1 ); /* IE6-9 */
+
+
+    border-radius: 30px 0 0 30px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.80);
+    content: "";
+    height: 100%;
+    margin-top: -40px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+#slider ul {
+    list-style: none outside none;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+}
+#slider ul li {
+    height: 40px;
+    width: 182px;
+}
+
+#slider ul li a.menudesplieg {
+    border-bottom: 1px solid gray;
+    color: white;
+    display: block;
+    font-family: 'Changa One';
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding-left: 10%;
+    position: absolute;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 160px;
+    z-index: 110;
+
+
+}
+#slider ul li div {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    border-radius: 0 15px 15px 0;
+    color: white;
+    height: 425px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 15px 15px;
+    position: absolute;
+    top: 0;
+    transition: 1s left,1s width,1s opacity;
+    -webkit-transition: 1s left,1s width,1s opacity;
+    -moz-transition: 1s left,1s width,1s opacity;
+    -o-transition: 1s left,1s width,1s opacity;
+    width: 152px;
+    z-index: 50;
+    overflow-y: overlay;  
+}
+::-webkit-scrollbar{
+    width:10px;
+    height: 20px;
+} 
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    opacity: .60;
+    -moz-opacity: .60;
+    filter:alpha(opacity=45);
+
+} 
+#slider ul li:hover div {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    left: 182px;
+    opacity: 1;
+    width: 276px;
+}
+
+#slider ul li div h5 {
+    border-bottom: 1px solid #888;
+    color: gray;
+    font-family: trebuchet ms;
+    font-size: 2.5em;
+    margin: 0 0 5px;
+    text-align: center;
+}
+#slider ul li div p {
+    font-family: trebuchet ms;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: normal;
+    overflow: hidden;
+    padding-top: 15px;
+    width: 276px;
+}
+#slider ul li div p.desplieg {
+    float: right;
+}
+#slider ul li div p.desplieg a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    color: gray;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 18px;
+    margin: 10px 0;
+    padding: 4px;
+    text-decoration: none;
+}
+/* fin de menu vertical*/
+
+
+/*inicio de estilo slider */
+
+
+.banner{
+
+    width: 100%;
+    clear: both;
+    float: left;
+
+}
+
+.banner { overflow: auto; 
+          padding: 12% 0 21.5% 0;
+          font-size: 6em;
+          color: snow;
+          font-family: 'Changa One';}
+
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+
+/* fin de estilo slider*/
+
+
+
+/*pie*/
+.cajaPie{
+    font-size: 1.5em;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+ul.menuPie {
+    background-color: #562D57;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+
+}
+ul.menuPie li {
+    float: left;
+    width: 25%;
+}
+ul.menuPie li a {
+    text-align: center;
+    color: white;
+    display: block;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    text-decoration: none;
+}
+ul.menuPie li a:hover {
+    color:  gray;
+
+}
+/* fin de pie*/
+
+
+
+
+
+/*index panel profesor*/
+
+/*profesor (grupos)*/
+
+.cajaProCrearGrupo{
+    width: 45%;
+    margin-left: 20% ;
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    float: left;
+    font-size: 1.5em;
+    padding-top: 3%;
+    padding-left: 15%;;
+    border-radius: 15px; 
+}
+
+
+.cajaProCrearGrupo #proCrearGrupo{
+
+    margin:0;
+    width:300px;
+    padding: 6px 10px;
+    font-size:12px;
+    color:#b3b3b3;
+    border:solid 1px #585858;
+    text-shadow: 1px 1px 0 #4b4b4b;
+    margin-right: 3%;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+    margin-bottom: 8%;
+    box-shadow: inset 1px 1px 3px 0 #000;
+    -moz-box-shadow: inset 1px 1px 3px 0 #000;
+    -webkit-box-shadow: inset 1px 1px 3px 0 #000;
+    background:-moz-linear-gradient(0% 100% 90deg,#7e7e7e, #5e5e5e);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#5e5e5e), to(#7e7e7e));
+
+}
+
+#borrarGrupo{
+
+    float: left;
+    clear: both;
+}
+
+.lisg1{
+    clear: both;
+    float: left;
+    padding-right: 3%;
+    width: 10%;
+    padding-bottom: 2%;
+    border: none;
+}
+
+.lisg2{
+    float: left;
+    width: 10%;
+    margin-right: 1%;
+    padding-left: 3%;
+}
+
+.mostrarBorrarGrupo .lisg2 input{
+    margin:0;
+    width:300px;
+    padding: 6px 10px;
+    font-size:12px;
+    color:#b3b3b3;
+    border:solid 1px #585858;
+    text-shadow: 1px 1px 0 #4b4b4b;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+     box-shadow: inset 1px 1px 3px 0 #000;
+    -moz-box-shadow: inset 1px 1px 3px 0 #000;
+    -webkit-box-shadow: inset 1px 1px 3px 0 #000;
+    background:-moz-linear-gradient(0% 100% 90deg,#7e7e7e, #5e5e5e);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#5e5e5e), to(#7e7e7e));
+}
+
+/*profesor (alumnos)*/
+
+#contenedorRegistrarAlumno{
+    width: 60%;
+    margin-left: 20% ;
+    float: left;
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    font-size: 1.5em;
+    padding-top: 3%;
+    text-align: center;
+    border-radius: 15px; 
+
+}
+#contenedorRegistrarAlumno .lis input{
+    margin:0;
+    width:300px;
+    padding: 6px 10px;
+    font-size:12px;
+    color:#b3b3b3;
+    border:solid 1px #585858;
+    text-shadow: 1px 1px 0 #4b4b4b;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+    box-shadow: inset 1px 1px 3px 0 #000;
+    -moz-box-shadow: inset 1px 1px 3px 0 #000;
+    -webkit-box-shadow: inset 1px 1px 3px 0 #000;
+    background:-moz-linear-gradient(0% 100% 90deg,#7e7e7e, #5e5e5e);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#5e5e5e), to(#7e7e7e));
+
+}
+/*select de registrar alumno*/
+#selectgrupo{
+    margin:0;
+    width:320px;
+    padding: 6px 10px;
+    font-size:12px;
+    color:white;
+    border:solid 1px #585858;
+    text-shadow: 1px 1px 0 #4b4b4b;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+    box-shadow: inset 1px 1px 3px 0 #000;
+    -moz-box-shadow: inset 1px 1px 3px 0 #000;
+    -webkit-box-shadow: inset 1px 1px 3px 0 #000;
+    background-color:#b3b3b3;
+}
+
+/*ver alumno por grupo*/
+
+#listaAlumnos{
+
+    width: 60%;
+    float: left;
+    margin-left: 20% ;
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    font-size: 1.5em;
+    padding-top: 3%;
+
+    text-align: center;
+    border-radius: 15px; 
+
+}
+#selectGrupoAlumnos{
+    margin:0;
+    width:320px;
+    padding: 6px 10px;
+    font-size:12px;
+    color:white;
+    border:solid 1px #585858;
+    text-shadow: 1px 1px 0 #4b4b4b;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+    box-shadow: inset 1px 1px 3px 0 #000;
+    -moz-box-shadow: inset 1px 1px 3px 0 #000;
+    -webkit-box-shadow: inset 1px 1px 3px 0 #000;
+    background-color:#b3b3b3;
+}
+
+
+#borrarAlumno{
+
+    float: left;
+    clear: both;
+    margin-left: 1.5%;
+
+}
+
+/*chat*/
+
+
+#chatAlumnos{
+    width: 60%;
+    float: left;
+    margin-left: 20% ;
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    font-size: 1.5em;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    border-radius: 15px; 
+}
+
+#tituloChat{
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#botones{
+    box-sizing:border-box;
+     background-color:#b3b3b3;
+    border: solid 1px #000;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    margin-top: 10px;  
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+}
+#enviar{
+    border:solid 1px #bababa;
+    color:#363630;
+    font-weight:bold;
+    font-size:18px;
+    border-bottom-color:#363636;
+    background:-moz-linear-gradient(0% 100% 90deg,#5f5f5f, #9e9e9e);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#9e9e9e), to(#5f5f5f));   
+    margin: 2.5% 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    text-shadow: 1px 1px 0 #9d9d9d; 
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;   
+}
+#contenedorUsuario{
+    margin:0;
+    width:120px;
+    padding: 6px 10px;
+    font-size:12px;
+    text-shadow: 1px 1px 0 #4b4b4b;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+    background-color:#b3b3b3;
+}
+#selectcentro{
+    margin:0;
+    width:120px;
+    padding: 6px 10px;
+    font-size:12px;
+    text-shadow: 1px 1px 0 #4b4b4b;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+    background-color:#b3b3b3;
+}
+#resultado{
+    box-sizing:border-box;
+    background-color:#b3b3b3;
+    border: solid 1px #000;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+    width: 350px;
+}
+
+#texto{
+    color: black;
+    box-sizing:border-box;
+    background-color: #b3b3b3;
+    font-size: 14px;
+    width: 100%;
+    height: 240px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+}
+#texto_chat{
+    box-sizing:border-box;
+    font-size: 14px;
+    height: 60px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*estilo forum*/
+
+#cajaBlog{
+    border-radius: 15px; 
+    width: 60%;
+    float: left;
+    margin-left: 20% ;
+/*    margin: 0 auto;*/
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    font-size: 1.5em;
+     padding-top: 3%;
+    padding-bottom: 3%;
+/*    padding-bottom: 7%;*/
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    color: #8A638B;
+}
+#encabezadoBlog{
+    text-align: center;
+}
+#portada{
+    font-size:4em;
+    text-align: center;
+}
+#portada2{
+    color: #8A638B;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+#botreg{
+    float: right;
+}
+.bo {
+    background-color:gray;
+    -moz-border-radius:34px;
+    -webkit-border-radius:34px;
+    border-radius:34px;
+    border:5px solid gray;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Changa One';
+    font-size:18px;
+    font-weight:bold;
+    padding:10px 41px;
+    text-decoration:none;
+    text-shadow:2px -3px 22px #b23e35;
+}
+.bo:hover {
+    background-color:#8A638B;
+}
+.bo:active {
+    position:relative;
+    top:1px;
+}
+#reg {
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+#reg input:focus {
+    background-color:#CB96D4;
+}
+.clase1{
+    margin-left: 10%;
+}
+#titulo{
+    text-align: center;
+}
+
+#cajapublicar{
+    position: fixed;
+    top: 35%;
+    right: 7%;
+}
+#botreg{
+    width: 80%;
+}
+
+imgFinal{
+    width: 80%;
+}
+#selectcentroBlog{
+    margin:0;
+    width:320px;
+    padding: 6px 10px;
+    font-size:12px;
+    color:white;
+    border:solid 1px #585858;
+    text-shadow: 1px 1px 0 #4b4b4b; 
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+    box-shadow: inset 1px 1px 3px 0 #000;
+    -moz-box-shadow: inset 1px 1px 3px 0 #000;
+    -webkit-box-shadow: inset 1px 1px 3px 0 #000;
+    background-color:#b3b3b3;
+}
+
+/*estilo tablon */
+
+#cajaTablon
+{
+    border-radius: 15px; 
+    width: 60%;
+    float: left;
+    margin-left: 20% ;
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    font-size: 1.5em;
+    padding-top: 3%;  
+    padding-bottom: 3%;
+}
+#encabezadoTablon{
+    text-align: center;
+}
+#tituloTablon{
+    font-size:4em;
+    text-align: center;
+}
+#subtituloTablon{
+    color: #8A638B;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+#regTablon {
+    text-align: center;
+    width: 100%;
+}
+#regTablon input:focus {
+    background-color:#CB96D4;
+}
+#tituloPublicar {
+    margin-left: 10%;
+     
+}
+#tituloPublicar h3 {
+    
+     color: #CB96D4;
+}
+
+/*estilo cuestionario*/
+
+#cajaExamen
+{border-radius: 15px; 
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    font-size: 1.5em;
+    padding-top: 3%;
+    padding-left: 6%;
+    padding-bottom: 7%;
+}
+
+#tituloExamen{
+    font-size:4em;
+    text-align: center;
+}
+#subtituloExamen{
+    color: #8A638B;
+    font-size: 1.8em;
+    font-weight: 700;
+
+}
+
+/*estilo correo*/
+
+.cajaCorreo{
+    border-radius: 15px;   
+    border-radius: 15px;    
+    width: 60%;
+    float: left;
+    margin-left: 20% ;
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    font-size: 1.5em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.form1{
+    margin-left: 10%;
+}
+/*estilo inputs*/
+
+.lis1{
+    clear: both;
+    float: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 10%;
+    padding-bottom: 2%;
+    border: none;
+}
+
+.lis2{
+    float: left;
+    width: 10%;
+    margin-right: 1%;
+}
+.lis3{
+    float: left;
+    width: 10%;
+}
+
+
+.css3Form ul li{
+    margin:10px 0;
+    box-shadow: 1px 1px 0 0 #949494;
+    -moz-box-shadow: 1px 1px 0 0 #949494;
+    -webkit-box-shadow: 1px 1px 0 0 #949494;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px; 
+    float:left;
+    clear:both;
+}
+.css3Form input, .css3Form textarea{
+    margin:0;
+    width:80px;
+    padding: 6px 10px;
+    font-size:12px;
+    color:#b3b3b3;
+    border:solid 1px #585858;
+    text-shadow: 1px 1px 0 #4b4b4b;
+    border-radius: 18px 18px;
+    -moz-border-radius: 18px 18px;
+    -webkit-border-radius: 18px 18px;       
+    box-shadow: inset 1px 1px 3px 0 #000;
+    -moz-box-shadow: inset 1px 1px 3px 0 #000;
+    -webkit-box-shadow: inset 1px 1px 3px 0 #000;
+    background:-moz-linear-gradient(0% 100% 90deg,#7e7e7e, #5e5e5e);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#5e5e5e), to(#7e7e7e));
+}
+.css3Form .button{
+    width:110px;
+    border:solid 1px #bababa;
+    color:#363630;
+    font-weight:bold;
+    font-size:16px;
+    border-bottom-color:#363636;
+    background:-moz-linear-gradient(0% 100% 90deg,#5f5f5f, #9e9e9e);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#9e9e9e), to(#5f5f5f));   
+    margin: 2.5% 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    text-shadow: 1px 1px 0 #9d9d9d; 
+}
+
+/*ocultar opciones de index profesor*/
+
+.ocultarDiv{
+    display: none;
+
+}
+
+/*fin de panel profesor*/
+
+/*inicio panel administrador*/
+
+
+.cajaExamenesAdmin{
+    border-radius: 15px; 
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    font-size: 1.5em;
+    padding-top: 3%;
+    padding-bottom: 7%;
+
+}
+
+/*divs formulario respuestas admin*/
+
+/*estilo de los input*/
+.escondido{
+    clear: both;
+    float: left;
+    display: none;
+    padding-left: 10%;
+    margin-left: 25%;
+    clear: both;
+    float: left;
+    width: 50%;
+}
+#recursosSubidos{
+    float: left;
+    width: 20%;
+}
+.recSubidos{
+    clear: both;
+    float: left;
+    width: 92%;
+    margin: 2%;
+}
+#subirRec{
+    width: 50%;
+    background-color: aqua;
+    height: 3em;
+}
+/* visualizar examen */
+/*.claseVisualizarExamen{
+    background-color: blue;
+}
+.claseVisualizarPregunta{
+    background-color: brown;
+}
+.claseVisualizarTipoPropuesta{
+    background-color: darkmagenta;
+}
+.claseVisualizarRecursoPropuesta{
+    background-color: aqua;
+}
+.claseVisualizarFedbackTipoResp{
+    background-color: black;
+}
+*/
+.tamImagen{
+    width: 80%;
+}
+
+
+
+
+
+
+
+/*fin de panel administrador*/
+#finsecion{
+    background-color: #4b4b4b;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1em;
+}
+#correoolvidado{
+    background-color: #4b4b4b;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1em;
+}
+.butElejirTema{
+
+    border-radius: 8px 8px 8px 8px;
+    color: gray;
+    padding: 2%;
+    border-bottom: 1px solid gray;
+    display: block;
+    font-family: 'Changa One';
+
+}
+#butCrearTema {
+    border-radius: 8px 8px 8px 8px;
+    color: gray;
+    padding: 2%;
+    border: none;
+    display: block;
+    font-family: 'Changa One';
+    background-color: #562D57;
+}

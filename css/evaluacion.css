@@ -1,0 +1,98 @@
+
+#alumno1{
+    display: none;
+}
+#alumno2{
+    display: none;
+}
+#caja1{
+    display: none;
+}
+#caja2 {
+    display: none;
+}
+
+#buno{
+    display: none;
+}
+#b2{
+    display: none;
+}
+#instru{
+    display: none;
+}
+
+
+#cajatotal{
+    border-radius: 15px; 
+text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 2px -3px 22px grey;
+    clear: both;
+    font-size: 1.5em;
+    padding-top: 3%;
+
+    padding-bottom: 7%;
+}
+
+#buno,#b2,#b3,#b4{
+    color: white; 
+    
+    padding: 8px 20px 8px 20px; 
+    background-color: #8A638B; 
+
+    font-size: 13px; 
+    font-weight: bold; 
+    border-radius: 15px;
+}
+#bv{
+
+    color: white; 
+
+    padding: 10px 20px 10px 20px; 
+    background-color: #8A638B; 
+
+    font-size: 20px; 
+    font-weight: bold; 
+
+
+    border-radius: 15px; 
+
+}
+
+#em{
+
+    color: white ;
+    border-radius: 15px;
+    padding: 2px 20px 2px 20px;
+    background-color: #8A638B; 
+
+    font-size: 15px; 
+    font-weight: bold; 
+}
+#ins{
+
+    color: white; 
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px; 
+    background-color: #8A638B; 
+
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+
+textarea{
+    text-align: center;
+    border-color:#8A638B ;
+}
+#tiporespuesta,#i{
+    text-align: left;
+}
+h2{
+    color: #8A638B;
+}
+#uno{
+    text-align: right;
+}

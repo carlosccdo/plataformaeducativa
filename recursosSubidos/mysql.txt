@@ -1,0 +1,134 @@
+
+
+1.-La alumna María López Martínez ha cambiado de domicilio, 
+por lo que el antiguo deberá ser sustituido por el nuevo, 
+así como su número de teléfono.
+
+Nuevo domicilio:
+
+C/Ronda No 10 4o B
+Nuevo número de teléfono:
+ 915006985
+
+update inf_per 
+set domicilio='C/Ronda No 10 4o B',telefono='915006985'
+where nombre='MARIA' and apellido_1='LOPEZ' and apellido_2='MARTINEZ'; 
+
+2.-El alumno Ivan Zurita Martín se ha dado de baja, 
+por lo que sus datos deberán ser eliminados de la base de datos.
+
+
+DELETE FROM INF_ACA
+
+WHERE COD_ALUM=
+(SELECT COD_ALUM
+FROM INF_PER
+WHERE 
+                 NOMBRE='IVAN' and
+                 APELLIDO_1='ZURITA' and
+                 APELLIDO_2 ='MARTIN');
+ 
+DELETE FROM INF_PER
+
+WHERE 
+                 NOMBRE='IVAN' and
+                 APELLIDO_1='ZURITA' and
+                 APELLIDO_2 ='MARTIN';
+
+3.-Muestra toda la información de los alumnos contenida en la base de datos.
+
+SELECT *
+FROM INF_PER
+LEFT JOIN INF_ACA
+ON INF_PER.COD_ALUM=INF_ACA.COD_ALUM;
+
+
+4.-Muestra solamente el nombre de los alumnos y sus notas medias.
+
+SELECT NOMBRE , NOTA_MEDIA
+FROM INF_ACA;
+
+
+5.-Muestra el código del alumno,
+el nombre del alumno y el teléfono del alumno 
+de un modo comprensible para cualquier usuario, 
+de tal modo que no se muestre el nombre del campo como cod_alum,
+sino como código del alumno, etc...
+
+SELECT COD_ALUM AS 'Codigo Alumno',nombre as 'Nombre Alumno',telefono as 'Teléfono Alumno'
+from inf_per;
+
+
+6.-Muestra los datos académicos completos, 
+pero solo de los alumnos que estén en primero.
+
+SELECT *
+FROM INF_ACA
+where curso=1;
+
+
+7.-Muestra el código, el nombre y el curso de los alumnos que estén en 1, 3 y 4, solamente.
+Select nombre, curso
+from inf_aca
+where curso in (1,3,4);
+
+
+8.-Muestra el código y nombre de los alumnos que estén en 3o y repitan curso.
+Select cod_alum, nombre
+from inf_aca
+where curso = 3 and  repite ='si';
+
+9.-Muestra el código y el nombre de los alumnos cuya nota media esté entre el 6 y el 8,
+ independientemente del curso en el que estén.
+
+Select cod_alum, nombre
+from inf_aca
+where nota_media between 6 and 8;
+
+10.-Muestra de un modo comprensible el número de alumnos que hay en cada curso.
+Select curso, count(cod_alum) as numero 
+from inf_aca
+group by  curso;
+
+11.-Muestra de un modo comprensible la nota media máxima conseguida por un alumno en cada uno de los cuatro cursos,
+pero redondeando dichas calificaciones al alza.
+Select CEILING(max(nota_media)) as 'Nota Maxima',curso
+from inf_aca
+group by curso;
+
+12.-Muestra el nombre de los 50 % de los alumnos matriculados en primero.
+Select nombre
+from inf_aca
+where curso=1 
+having count(cod_alum)/2;
+
+13.-El instituto solicita una tabla (INF_ACA_REP)
+que contenga solo información relativa a los repetidores, 
+en la que se indique el código, el nombre, el curso y la nota media del alumno.
+
+CREATE TABLE INF_ACA_REP 
+(SELECT COD_ALUM,NOMBRE,CURSO,NOTA_MEDIA FROM 
+INF_ACA WHERE REPITE=’SI’);
+
+14.-Se va a conceder una subvención al transporte, 
+pero solo para los alumnos que vivan en Madrid. 
+Muestra el código, nombre y apellidos, únicamente de estos alumnos.
+SELECT NOMBRE,APELLIDO_1, APELLIDO_2
+FROM INF_PER
+WHERE TELEFONO LIKE '91%';
+
+15.-Muestra la información académica junto con la personal de los alumnos que estén en 3o, 
+evitando mostrar aquellos registros que no sean continuos entre ambas tablas.
+SELECT * 
+FROM INF_PER
+JOIN INF_ACA
+ON INF_PER.COD_ALUM=INF_ACA.COD_ALUM;
+
+16.-Muestra la información académica junto con la personal de todos los alumnos, 
+mostrando también aquellos registros existentes en la tabla información personal,
+que no tengan continuidad en la tabla información académica.
+
+SELECT * 
+FROM INF_PER
+LEFT JOIN INF_ACA
+ON INF_PER.COD_ALUM=INF_ACA.COD_ALUM;
