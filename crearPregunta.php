@@ -1,6 +1,6 @@
 <?php
 
-// Para que no se de un ERROR (al coexistir un include / require /require_once con un header location
+//  Para quee no se de un ERROR (al coexistir un include / require /require_once con un header location
 // es necesario que en el fichero con1.php no exista espacios en blanco.
 $pregunta = $_POST["pregunta"];
 $idTema = $_POST["idTema"];
